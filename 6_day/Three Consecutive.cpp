@@ -28,3 +28,27 @@ int main() {
 
     return 0;
 }
+
+
+/*
+ * Complete the function 'threeConsecutive' below
+ * @params
+ *   a,b,c -> integers which are to be checked
+ * @return
+ * An integer, 1 if the numbers are consecutive else 0
+ 
+#include<bits/stdc++.h>
+int threeConsecutive(int a, int b, int c){
+  // Write your code here
+    int arr[3] = {a,b,c};
+    sort(arr,arr+3);
+    if (arr[1] - arr[0] == 1 && arr[2] - arr[1] == 1)
+    {
+        return 1;
+    }
+    else 
+    {
+        return 0;
+    }
+}
+*/
